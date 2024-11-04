@@ -279,7 +279,7 @@ private:
 
         // Assume a typical engine efficiency curve
         float engine_efficiency = 0.25f + 0.10f * (power_at_cruise / power_available); // Simplified efficiency model
-        fuel_consumption = (power_at_cruise / (engine_efficiency * 42000000.0f)) * 3600.0f * 100.0f; // L/100km
+        fuel_consumption = (power_at_cruise / (engine_efficiency * 42000000.0f)) * 3600.0f; // L/100km
     }
 
     // Updated function signature to include final_drive_ratio
